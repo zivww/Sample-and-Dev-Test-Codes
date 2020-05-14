@@ -1,0 +1,21 @@
+<resources>
+    <string name="appName">Gala Phone</string>
+    <string name="app_name">Gala Phone</string>
+    <string name="callButton">CALL</string>
+    <string name="dataButton">DATA</string>
+    <string name="imsButton">IMS</string>
+    <string name="gpsButton">GPS</string>
+    <string name="nvButton">NV</string>
+    <string name="alibudaButton">A LI BU DA</string>
+    <string name="copy">Copy</string>
+    <string name="fileioButton">File I/O</string>
+    <string name="read">READ</string>
+    <string name="title_activity_alibudas">Alibudas</string>
+    <string name="title_activity_fileio">FileIO</string>
+    <string name="startDialButton">Start Dial</string>
+    <string name="dropDialButton">Drop Dial</string>
+    <string name="hangUpButton">Hang Up</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="default5Times">5</string>
+    <string name="repeattimesText">Repeat Times</string>
+</resources>
