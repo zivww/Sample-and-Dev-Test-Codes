@@ -12,10 +12,25 @@
     <string name="read">READ</string>
     <string name="title_activity_alibudas">Alibudas</string>
     <string name="title_activity_fileio">FileIO</string>
+
     <string name="startDialButton">Start Dial</string>
     <string name="dropDialButton">Drop Dial</string>
     <string name="hangUpButton">Hang Up</string>
     <string name="phoneNumber">Phone Number</string>
     <string name="default5Times">5</string>
     <string name="repeattimesText">Repeat Times</string>
+
+    <string name="apnCheckButton">APN Check</string>
+    <string name="connectivityCheckButton">Connectivity</string>
+    <string name="throughputButton">Throughput</string>
+    <string name="pingButton">Ping</string>
+    <string name="advancedTestButton">Advanced</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_ip_address">IP Address or Hostname</string>
+    <string name="ping">Ping</string>
+    <string name="wol">Wake-On-Lan</string>
+    <string name="port_scan">Port Scan</string>
+    <string name="subnet">Subnet Devices</string>
+    <string name="timeout">** Timeout **</string>
 </resources>

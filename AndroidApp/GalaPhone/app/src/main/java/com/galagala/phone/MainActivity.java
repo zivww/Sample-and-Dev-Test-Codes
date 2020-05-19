@@ -42,7 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        dataButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // logic goes here
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this , DataTest.class);
+                startActivity(intent);
+            }
+        });
         alibudaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
