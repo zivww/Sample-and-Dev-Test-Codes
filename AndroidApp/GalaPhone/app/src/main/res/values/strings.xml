@@ -33,4 +33,8 @@
     <string name="port_scan">Port Scan</string>
     <string name="subnet">Subnet Devices</string>
     <string name="timeout">** Timeout **</string>
+
+    <string name="enableData">Enable Data</string>
+    <string name="checkDataEnabled">Check Data Enabled</string>
+    <string name="displayResult">Result:</string>
 </resources>

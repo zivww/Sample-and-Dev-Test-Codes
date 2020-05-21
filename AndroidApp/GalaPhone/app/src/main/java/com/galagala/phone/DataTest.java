@@ -35,6 +35,16 @@ public class DataTest  extends AppCompatActivity {
 
             }
         });
+        connectivityCheckButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.e(Tag, "PingTest!");
+                // logic goes here
+                Intent intent = new Intent();
+                intent.setClass(DataTest.this , ConnectivityCheckTest.class);
+                startActivity(intent);
+            }
+        });
         pingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

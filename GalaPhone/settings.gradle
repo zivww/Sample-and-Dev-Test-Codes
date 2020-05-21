@@ -1,0 +1,3 @@
+rootProject.name='GalaPhone'
+include ':app'
+include ':network'
