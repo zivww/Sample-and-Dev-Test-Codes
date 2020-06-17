@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.galagala.findchinaapp">
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.galagala.findchinaapp.AppController"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+            <activity android:name="com.galagala.findchinaapp.ui.Splash">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+            </activity>
+            <activity android:hardwareAccelerated="true" android:name="com.galagala.findchinaapp.ui.MainActivity"/>
+            <activity android:enabled="false" android:exported="false"
+                android:launchMode="singleInstance"
+                android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+                android:process=":playcore_missing_splits_activity"
+                android:stateNotNeeded="true"/>
+            <activity android:enabled="false"
+                android:exported="false"
+                android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+                android:process=":playcore_dialog_wrapper_activity"
+                android:stateNotNeeded="true"
+                android:theme="@style/Theme.PlayCore.Transparent"/>
+
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+
+
+</manifest>

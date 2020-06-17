@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/background" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/dragonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_with_dragon" android:layout_centerInParent="true" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/doneIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_done_icon" android:layout_centerInParent="true" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/scan_ui" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <TextView  android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/scan_now_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/clickscantext"/>
+                    <Button  android:textStyle="bold" android:textColor="@color/white" android:id="@+id/scan_now" android:background="@drawable/rounded__corner_btn" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="25dp" android:text="@string/scannow" android:layout_alignParentBottom="true" android:textAllCaps="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/listLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/app_found_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/app_found_count"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_below="@id/app_found_count" />
+                    <Button android:textStyle="bold" android:textColor="@color/white" android:id="@+id/rescan_now" android:background="@drawable/rounded__corner_btn" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="25dp" android:text="@string/rescan" android:layout_alignParentBottom="true" android:textAllCaps="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/noappsfoundLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/congratulation_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/congratulation"/>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/awesome_txt" android:layout_below="@+id/congratulation_txt" android:layout_centerInParent="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
